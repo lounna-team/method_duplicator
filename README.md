@@ -36,7 +36,7 @@ $ gem install method_duplicator
 - [ ] Allow to pass parameters (path for example)
 - [ ] customize colors for a better visibility
 - [ ] optimization of the algo and the performance
-- [ ] Find another way (ctags, intellisense etc) to get the declarations do a complete parsing of the app
+- [ ] Find another way (ctags, intellisense etc) to get the declarations without doing a complete parsing of the app
 
 ## 👨‍💻 Contributing
 
