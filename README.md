@@ -28,6 +28,14 @@ Or install it yourself as:
 $ gem install method_duplicator
 ```
 
+## Tasks
+
+There is only one task at the moment that lists all the methods that are in the `app/` folder and the number of times they are called.
+
+```bash
+$ rails method_duplicator:methods
+```
+
 ## Todo
 
 - [ ] writing automatic tests (install RSpec)
