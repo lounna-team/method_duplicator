@@ -3,7 +3,7 @@ PATH
   specs:
     method_duplicator (0.1.0)
       color-console
-      rails (~> 6.1.4)
+      rails (>= 6.1)
 
 GEM
   remote: https://rubygems.org/
