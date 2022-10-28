@@ -30,13 +30,13 @@ $ gem install method_duplicator
 
 ## Todo
 
-- [] writing automatic tests (install RSpec)
-- [] Filter the methods to have only the one with 0 declarations
-- [] Make sure that in the file where the method is declared it can be called without the dot but not in the others
-- [] Allow to pass parameters (path for example)
-- [] customize colors for a better visibility
-- [] optimization of the algo and the performance
-- [] Find another way (ctags, intellisense etc) to get the declarations do a complete parsing of the app
+- [ ] writing automatic tests (install RSpec)
+- [ ] Filter the methods to have only the one with 0 declarations
+- [ ] Make sure that in the file where the method is declared it can be called without the dot but not in the others
+- [ ] Allow to pass parameters (path for example)
+- [ ] customize colors for a better visibility
+- [ ] optimization of the algo and the performance
+- [ ] Find another way (ctags, intellisense etc) to get the declarations do a complete parsing of the app
 
 ## 👨‍💻 Contributing
 
