@@ -7,7 +7,7 @@ module MethodDuplicator
 
       FilesWrapper.new.list.each do |file|
         result_function_name.each do |item|
-          if line.include?("#{item}")
+          if line.include?(item)
             hash[item] += 1
           end
         end

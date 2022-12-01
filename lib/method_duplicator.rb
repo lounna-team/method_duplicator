@@ -14,11 +14,11 @@ module MethodDuplicator
         new_line = line.gsub(/#.*/, '#')
         methods_array.each do |item|
           # counter le nombre de fois ou apparait le name
-          if new_line.include?(item.name)
-            # incrementer le counter
-            item.use_counter += new_line.split(/(\.| )/).count do |word|
-              word.include?(item.name)
-            end
+          next unless new_line.include?(item.name)
+
+          # incrementer le counter
+          item.use_counter += new_line.split(/(\.| )/).count do |word|
+            word.include?(item.name)
           end
         end
       end

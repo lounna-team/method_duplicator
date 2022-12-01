@@ -1,8 +1,8 @@
 require 'color-console'
 
 namespace :method_duplicator do
-  desc "Explaining what the task does"
-  task :methods => :environment do
+  desc 'Explaining what the task does'
+  task methods: :environment do
     result = MethodDuplicator.get_unused_method do |progress|
       Console.show_progress('Progress', progress)
     end
@@ -16,4 +16,3 @@ namespace :method_duplicator do
     end), col_spec: '|', row_spec: '-')
   end
 end
-
