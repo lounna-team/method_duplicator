@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  include TestConcernable
 
   def full_name
     name

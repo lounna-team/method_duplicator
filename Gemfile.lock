@@ -4,6 +4,7 @@ PATH
     method_duplicator (0.1.0)
       color-console
       rails (>= 6.1)
+      zeitwerk
 
 GEM
   remote: https://rubygems.org/
