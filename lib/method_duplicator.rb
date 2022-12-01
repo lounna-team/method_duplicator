@@ -3,6 +3,7 @@ require "method_duplicator/railtie"
 require "method_duplicator/methods_wrapper"
 require "method_duplicator/files_wrapper"
 require "method_duplicator/method_format"
+require "method_duplicator/csv_builder"
 
 module MethodDuplicator
   def self.get_unused_method
@@ -27,6 +28,7 @@ module MethodDuplicator
       end
     end
 
+    CsvBuilder.new(data: methods_array).build
     methods_array
   end
 end

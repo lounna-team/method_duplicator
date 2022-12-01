@@ -1,17 +1,18 @@
-class CsvBuilder
-  attr_accessor :output, :header, :data
+require 'csv'
 
-  def initialize(header, data, output = "")
-    @output = output
-    @header = header
+class CsvBuilder
+  attr_reader :data
+
+  def initialize(data:)
     @data = data
   end
 
   def build
-    output << CSV.generate_line(header)
-    data.each do |row|
-      output << CSV.generate_line(row)
+    CSV.open("tmp/file.csv", 'w') do |csv|
+      csv << ['Method Name', 'Files', 'Definition line', 'Counter use']
+      data.each do |item|
+        csv << [item.name, item.file_path, item.line, item.use_counter]
+      end
     end
-    output
   end
 end
