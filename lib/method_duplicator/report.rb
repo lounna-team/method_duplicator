@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module MothodDuplicator
+module MethodDuplicator
   class Report
     def unused_method
       result = result_function_name.to_h { |i| [i, -1] }
