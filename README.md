@@ -44,6 +44,7 @@ $ rails method_duplicator:methods
 - [ ] Allow to pass parameters (path for example)
 - [ ] customize colors for a better visibility
 - [ ] optimization of the algo and the performance
+- [x] Export to CSV in tmp/ 
 - [ ] Find another way (ctags, intellisense etc) to get the declarations without doing a complete parsing of the app
 
 ## 👨‍💻 Contributing
